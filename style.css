@@ -103,6 +103,66 @@ aside{
 aside div{
     display: inline;
 }
+fieldset{
+    max-width: 280px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(37, 39, 170);
+    background-image: linear-gradient(to right, rgb(146, 172, 228), rgb(50, 50, 241));
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
+    margin-bottom: 30px;
+}
+.noticia{
+    max-width: 30%;
+    color: black;
+    font-size: 17px;
+    height: auto;
+}
+legend{
+    font-weight: bold;
+    color: black;
+}
+input{
+    border-radius: 15px;
+}
+#log{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#pass{
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.senha{
+    
+}
+.logar{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 90px;
+    width: 80px;
+    float: right;
+}
+.recover{
+    margin-top: 15px;
+    float: left;
+    font-size: 10px;
+    border: 2px solid black;
+    color: blue;
+    font-weight: bold;
+}
+#text-not{
+    resize: none;
+    margin-bottom: 20px;
+    display: block;
+
+}
 
 footer{
     background-image: linear-gradient( to bottom, var(--cor3), var(--cor2));

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voçê Reporter!</title>
+    <title>Você Reporter!</title>
     <link rel="shortcut icon" href="imagens/favicon(4).ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,13 +20,34 @@
     </header>
     <main class="espacamento">
         <h1>Participe ativamente do Notícias da cidade!</h1>
-        <p> Digite o seu E-mail: <input type="email" name="" id=""><br></p>
-        <p>Digite a sua senha :  <input type="password" name="" id=""></p>
-        <input type="button" value="Logar">
-        <h2>Digite a sua notícia, conte detalhadamente!</h2>
-        <input type="text"> 
-        <input type="button" value="enviar notícia!" >
-        <p>Só serão validadas notícias onde as fontes poderão ser confirmadas!</p>
+        <hr>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="log">E-mail:</label>
+                <input type="email" name="text" id="log" autofocus required placeholder="Digite um E-mail válido.">
+                <br>
+                <label class="senha" for="pass">Senha:</label>
+                <input type="password" name="pass" id="pass" >
+                <input type="submit" value="Logar" class="logar">
+                <input type="submit" value="Recuperar Senha" class="recover">
+            </fieldset>
+            <fieldset class="noticia">
+                <legend>Digite a sua notícia</legend>
+            <label for="tema-acid">
+                <input type="radio" name="tema-not" id="tema-acid">Acidente
+            </label>
+            <label for="tema-tran">
+                <input type="radio" name="tema-not" id="tema-tran">Transito
+            </label>
+            <label for="tema-outro">
+                <input type="radio" name="tema-not" id="tema-outro">Outro
+            </label>
+                <textarea  name="text-not" id="text-not" cols="30" rows="7" required></textarea>
+        
+                <label class="arquivos">Coloque imagens e vídeos da sua notícia!<input type="file"></label>
+            </fieldset>
+            </form>
     </main>
     <aside>
         <h2>Parceiros</h2>
